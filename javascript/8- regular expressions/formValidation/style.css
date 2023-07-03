@@ -1,0 +1,82 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: sans-serif;
+   background-color: #f4f4f4;
+   padding-top: 3rem;
+}
+
+a, input, button {
+   font-size: 1.6rem;
+}
+
+h1 {
+   margin-bottom: 1rem;
+}
+
+.container {
+   padding: 2rem 3rem;
+   border-radius: 0.8rem;
+   margin: 0 auto;
+   width: min(90vw, 600px);
+   background-color: white;
+}
+
+.container form .input-group {
+   margin-bottom: 1rem;
+}
+
+.container form .input-group label {
+   display: block;
+   margin-bottom: .5rem;
+}
+
+.container form .input-group input {
+   width: 100%;
+   padding: 1rem;
+   border-radius: .5rem;
+}
+
+.container form .input-group p {
+   margin-top: .5rem;
+   color: red;
+   visibility: hidden;
+}
+
+.container form input[type="submit"] {
+   display: block;
+   width: 100%;
+   padding: 1rem;
+   border: none;
+   background-color: darkblue;
+   color: white;
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: all .2s ease-in-out;
+}
+
+.container form input[type="submit"]:hover {
+   background-color: blue;
+}
+
+/* INVALID INPUT */
+
+form .input-group .invalid-input input {
+   border: 2px solid red;
+}
+
+form .input-group .invalid-input p {
+   visibility: visible;
+}

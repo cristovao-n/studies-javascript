@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body {
+         background-color: #f4f4f4;
+         font-family: sans-serif;
+         margin-left: 2rem;
+      }
+      .button {
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         text-transform: uppercase;
+         background-color: #f4f4f4;
+         color: rgba(0,0,0,0.8);
+         font-weight: bold;
+         padding: 0.6rem 2rem;
+         display: inline;
+         margin: 1rem;
+         border: 2px solid rgba(0,0,0,0.4);
+         border-radius: 5px;
+         cursor: pointer;
+      }
+
+      .button:first-child {
+         margin-left: 0;
+      }
+
+      .button:hover {
+         opacity: 0.7;
+      }
+   </style>
+   <title>Ajax Sandbox</title>
+</head>
+<body>
+   <div class="container">
+      <button class="button" id="button1">Get Customer</button>
+      <button class="button" id="button2">Get Customers</button>
+      <br><br>
+      <h1>Customer</h1>
+      <div id="customer"></div>
+      <h1>Customers</h1>
+      <div id="customers"></div>
+   </div>
+   <script src="02_ajax_json.js"></script>
+</body>
+</html>
