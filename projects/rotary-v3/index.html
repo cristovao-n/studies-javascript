@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/global.css">
+   <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="./styles/modal.css">
+   <link rel="stylesheet" href="./styles/responsive.css">
+   <link rel="shortcut icon" href="#">
+   <script src="https://kit.fontawesome.com/bf67364401.js" crossorigin="anonymous"></script>
+   <title>Stopwatch Controller</title>
+</head>
+
+<body>
+
+   <header id="main-header">
+      <div>
+         <i class="fas fa-stopwatch fa-3x"></i>
+         <h2>Rotary Controller</h2>
+      </div>
+      <div>
+         <button id="modal-btn" class="btn secondary">Inserir vídeo</button>
+         <a href="https://github.com/Crisnzx/rotary-v3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+         <a href="https://www.linkedin.com/in/cristov%C3%A3o-neto-055686211/" target="_blank"><i
+               class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+   </header>
+   <main class="main-content">
+      <section>
+         <video id="rotary-video" controls
+            src="" type="video/mp4"></video>
+         <div class="stopwatches">
+            <div id="left-stopwatch" class="stopwatch">
+               <h3>E0: Tempo de Espera</h3>
+               <p>00:00</p>
+            </div>
+            <div id="right-stopwatch" class="stopwatch">
+               <h3>D0: Tempo de Espera</h3>
+               <p>00:00</p>
+            </div>
+            <div id="timebetween-stopwatch" class="stopwatch">
+               <h3>Tempo de Brecha</h3>
+               <p>00:00</p>
+            </div>
+         </div>
+      </section>
+      <section>
+         <table class="data-table">
+            <thead>
+               <tr>
+                  <th rowspan="2">ID</th>
+                  <th rowspan="2">Situação</th>
+                  <th colSpan="3">Veículos Prioritários</th>
+                  <th colSpan="4">Veículo via secundária</th>
+               </tr>
+               <tr>
+                  <th>Líder</th>
+                  <th>Seguidor</th>
+                  <th>Intervalo/brecha</th>
+                  <th>Chegada</th>
+                  <th>Saída/rejeição</th>
+                  <th>Tempo de espera</th>
+                  <th>Faixa</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+         <button class="btn" id="download-button">Fazer download dos dados</button>
+      </section>
+   </main>
+   <footer>
+      <div>
+         <div>
+            <i class="fas fa-stopwatch fa-2x"></i>
+            <h3>Rotary Controller</h3>
+         </div>
+         <p>Controlador de fluxo de veículos em rotatórias com marcações de tempo e tabela para coleta de dados.</p>
+         <p>Feito por: <span id="highlight">Cristovão Neto</span></p>
+      </div>
+      <div>
+         <h3>Contato</h3>
+         <ul>
+            <li>
+               <i class="fab fa-linkedin fa-2x"></i>
+               <a href="https://www.linkedin.com/in/cristov%C3%A3o-neto-055686211/">Linkedin</a>
+            </li>
+            <li>
+               <i class="fab fa-github fa-2x"></i>
+               <a href="https://github.com/Crisnzx">Github</a>
+            </li>
+            <li>
+               <i class="fas fa-envelope fa-2x"></i>
+               <p>cristovaon13@gmail.com</p>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <h3>Como usar</h3>
+         <p>Acesse o link do repositório para aprender a usar a aplicação.</p>
+         <div>
+            <a href="https://github.com/Crisnzx/rotary-v3">
+               <i class="fab fa-github fa-5x"></i>
+            </a>
+         </div>
+      </div>
+      <div id="copyright">
+         <p>Copyright &copy; 2021</p>
+      </div>
+   </footer>
+
+   <div class="off" id="modal-overlay" >
+      <div id="modal-content">
+         <h3>Insira a URL do vídeo que você deseja analisar</h3>
+         <form>
+            <div class="input-group">
+               <label for="url">URL</label>
+               <input type="url">
+            </div>
+            <div id="buttons">
+               <button type="button" id="cancel-button" class="btn tertiary modal">Cancelar</button>
+               <button type="submit" class="btn modal">Enviar</button>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="./scripts/RotaryEvent.js"></script>
+   <script src="./scripts/scripts.js"></script>
+   <script src="./scripts/modal.js"></script>
+</body>
+
+</html>
